@@ -211,6 +211,7 @@ Colorpicker.prototype = {
       var toX = function(v, dim) {
         return Math.round((v - dim[2]) / (dim[3] - dim[2]) * config.sq * config.scale) - 0.5;
       };
+<<<<<<< HEAD:app.js
 <<<<<<< HEAD:index.js
       var a = options.handlesize;
       var b = Math.floor(options.handlesize * 0.65);
@@ -219,13 +220,18 @@ Colorpicker.prototype = {
       var y0 = toX(options.from[1], options.ydim) + 10;
       var y1 = toX(options.to[1], options.ydim) + 10;
 =======
+=======
+>>>>>>> parent of 9c09901 (Merge pull request #12 from tristen/refactor):index.js
       var a = gradient.handlesize;
       var b = Math.floor(gradient.handlesize * 0.65);
       var x0 = toX(gradient.from[0], config.xdim) + 10;
       var x1 = toX(gradient.to[0], config.xdim) + 10;
       var y0 = toX(gradient.from[1], config.ydim) + 10;
       var y1 = toX(gradient.to[1], config.ydim) + 10;
+<<<<<<< HEAD:app.js
 >>>>>>> parent of 9c09901 (Merge pull request #12 from tristen/refactor):app.js
+=======
+>>>>>>> parent of 9c09901 (Merge pull request #12 from tristen/refactor):index.js
       var fx, fy, x, y;
 
       var ctx = gradctx;
@@ -367,17 +373,23 @@ Colorpicker.prototype = {
         });
 
         var from = d3.select(this).classed('from');
+<<<<<<< HEAD:app.js
 <<<<<<< HEAD:index.js
         var x = posX + options.handlesize - 10;
         var y = posY + options.handlesize - 10;
         var xv = x / (options.sq * options.scale) * (options.xdim[3] - options.xdim[2]) + options.xdim[2];
         var yv = y / (options.sq * options.scale) * (options.ydim[3] - options.ydim[2]) + options.ydim[2];
 =======
+=======
+>>>>>>> parent of 9c09901 (Merge pull request #12 from tristen/refactor):index.js
         var x = posX + gradient.handlesize - 10;
         var y = posY + gradient.handlesize - 10;
         var xv = x / (config.sq * config.scale) * (config.xdim[3] - config.xdim[2]) + config.xdim[2];
         var yv = y / (config.sq * config.scale) * (config.ydim[3] - config.ydim[2]) + config.ydim[2];
+<<<<<<< HEAD:app.js
 >>>>>>> parent of 9c09901 (Merge pull request #12 from tristen/refactor):app.js
+=======
+>>>>>>> parent of 9c09901 (Merge pull request #12 from tristen/refactor):index.js
 
         xv = Math.min(config.xdim[3], Math.max(config.xdim[2], xv));
         yv = Math.min(config.ydim[3], Math.max(config.ydim[2], yv));
